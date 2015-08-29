@@ -107,7 +107,7 @@
 <wire x1="39.04" y1="-0.635" x2="39.04" y2="26.025" width="0" layer="20"/>
 <wire x1="39.04" y1="26.025" x2="-0.635" y2="26.025" width="0" layer="20"/>
 <wire x1="-0.635" y1="26.025" x2="-0.635" y2="-0.635" width="0" layer="20"/>
-<text x="8.89" y="3.81" size="1.778" layer="1">Nerduino
+<text x="8.89" y="3.81" size="1.778" layer="121">Nerduino
 
 BMP085 Shield
 I2C 0x77
