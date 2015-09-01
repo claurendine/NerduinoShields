@@ -10,25 +10,22 @@
     --default value for i2c communication
     local id=0
 
-    local readAddress = 0x3d
-    local writeAddress = 0x3c
+    local deviceAddress = 0x1e
     local gainValue = 0;
-
-    --default oversampling setting
-    local oss = 0
-    
-    --CO: calibration coefficients table.
-    local CO = {}
 
     -- read reg for 1 byte
     local function read_reg(reg_addr)
       i2c.start(id)
-      i2c.address(id, readAddress, i2c.TRANSMITTER)
+      i2c.address(id, deviceAddress, i2c.TRANSMITTER)
       i2c.write(id, reg_addr)
       i2c.stop(id)
       i2c.start(id)
-      i2c.address(id, readAddress, i2c.RECEIVER)
+      i2c.address(id, deviceAddress, i2c.RECEIVER)
       local c = i2c.read(id, 1)
+
+      --  print("read: ");
+      --  print(string.byte(c));
+      
       i2c.stop(id)
       return c
     end   
@@ -36,7 +33,7 @@
     --write reg for 1 byte
     local function write_reg(reg_addr, reg_val)
       i2c.start(id)
-      i2c.address(id, writeAddress, i2c.TRANSMITTER)
+      i2c.address(id, deviceAddress, i2c.TRANSMITTER)
       i2c.write(id, reg_addr)
       i2c.write(id, reg_val)
       i2c.stop(id)
@@ -70,14 +67,30 @@
         print("init done")
         i2c.setup(id, sda, scl, i2c.SLOW)
 
-        enableMagnetometer();
-        setMagneticGain(1);
+        M.enableMagnetometer();
+        M.setMagneticGain(1);
 
     end
 
     -- enable the magnetometer
     function M.enableMagnetometer()
         write_reg(0x02, 0x00); -- mode register
+    end
+
+    function M.dump()
+        read_reg(0x00);
+        read_reg(0x01);
+        read_reg(0x02);
+        read_reg(0x03);
+        read_reg(0x04);
+        read_reg(0x05);
+        read_reg(0x06);
+        read_reg(0x07);
+        read_reg(0x08);
+        read_reg(0x09);
+        read_reg(0x0A);
+        read_reg(0x0B);
+        read_reg(0x0C);
     end
 
 
@@ -89,95 +102,62 @@
         write_reg(0x01, gain);
 
         if (gain == 0) then
-            gainValue = 1370;
-        else if (gain == 1) then
-            gainValue = 1090;
-        else if (gain == 2) then
-            gainValue = 820;
-        else if (gain == 3) then
-            gainValue = 660;
-        else if (gain == 4) then
-            gainValue = 440;
-        else if (gain == 5) then
-            gainValue = 390;
-        else if (gain == 6) then
-            gainValue = 330;
-        else if (gain == 7) then
-            gainValue = 230;
+            gainValue = 73;
+        end
+        
+        if (gain == 1) then
+            gainValue = 92;
+        end
+        
+        if (gain == 2) then
+            gainValue = 122;
+        end
+        
+        if (gain == 3) then
+            gainValue = 152;
+        end
+        
+        if (gain == 4) then
+            gainValue = 227;
+        end
+        
+        if (gain == 5) then
+            gainValue = 256;
+        end
+        
+        if (gain == 6) then
+            gainValue = 303;
+        end
+        
+        if (gain == 7) then
+            gainValue = 435;
         end
       end
     end
 
-    -- read data
-    function M.readData()
-        -- send a request for measurement
-
-
-        -- wait for 6 bytes to be available
-    end
-
-    --get x-axis value
-    function M.getRawX()
-        local msb = read_reg(0x03);
-        local lsb = read_reg(0x04);
-
-        local xaxis = msb * 256 + lsb;
-
-        return xaxis;
-    end
-
-    --get y-axis value
-    function M.getRawY()
-        local msb = read_reg(0x07);
-        local lsb = read_reg(0x08);
-
-        local yaxis = msb * 256 + lsb;
-
-        return yaxis;
-    end
-
-    --get z-axis value
-    function M.getRawZ()
-        local msb = read_reg(0x05);
-        local lsb = read_reg(0x06);
-
-        local zaxis = msb * 256 + lsb;
-
-        return zaxis;
-    end
-
     --get x-axis value
     function M.getX()
-        local val = getRawX();
-        local ret = val * 390.0 / gainValue;
+        local val = getShort(0x03, true);
+        local ret = val * gainValue / 100;
 
         return ret;
     end
 
     --get y-axis value
     function M.getY()
-        local val = getRawY();
-        local ret = val * 390.0 / gainValue;
+        local val = getShort(0x07, true);
+        local ret = val * gainValue / 100;
 
         return ret;
     end
 
     --get z-axis value
     function M.getZ()
-        local val = getRawZ();
-        local ret = val * 390.0 / gainValue;
+        local val = getShort(0x05, true);
+        local ret = val * gainValue / 100;
 
         return ret;
     end
 
-    -- get temperature
-    function M.getTemperature()
-        local msb = read_reg(0x31);
-        local lsb = read_reg(0x32);
 
-        local temp = msb * 256 + lsb;
-
-        return temp;
-
-    end
-
+    return M
