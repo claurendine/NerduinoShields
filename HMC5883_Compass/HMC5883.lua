@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- HMC5883 I2C module for NODEMCU
 -- LICENCE: http://opensource.org/licenses/MIT
--- Chase <chase@nerduino.com>
+-- Chase <chase@nerduino.com> Scott
 --------------------------------------------------------------------------------
     local moduleName = ... 
     local M = {}
