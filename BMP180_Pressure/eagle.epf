@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/Users/chaselaurendine/Downloads/SparkFun-Eagle-Libraries-master/SparkFun-Sensors.lbr"
 UsedLibrary="/Applications/EAGLE-6.5.0/lbr/atmel.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/40xx.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/41xx.lbr"
@@ -333,12 +334,5 @@ UsedLibrary="/Applications/EAGLE/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zilog.lbr"
 UsedLibrary="/Users/chaselaurendine/Documents/eagle/Nerduino/NerduinoShieldLib.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="85 55 1531 1244"
-State=2
-Number=0
-
 [Desktop]
 Screen="2560 1440"
-Window="Win_1"
