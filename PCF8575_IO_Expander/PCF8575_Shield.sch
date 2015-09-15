@@ -1477,28 +1477,39 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="16.51" y1="-5.715" x2="15.875" y2="-6.35" width="0.2032" layer="21"/>
 <rectangle x1="17.526" y1="-5.334" x2="18.034" y2="-4.826" layer="51"/>
 <rectangle x1="17.526" y1="17.526" x2="18.034" y2="18.034" layer="51" rot="R180"/>
-<rectangle x1="16.51" y1="-3.81" x2="19.05" y2="16.51" layer="21"/>
-<wire x1="-11.43" y1="7.62" x2="-11.43" y2="0" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="0" x2="-17.78" y2="0" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-13.97" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="1.27" x2="-13.97" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="2.54" x2="-17.78" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="2.54" x2="-17.78" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="3.81" x2="-13.97" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="3.81" x2="-13.97" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="5.08" x2="-17.78" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="6.35" x2="-13.97" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="7.62" x2="-17.78" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="7.62" x2="-17.78" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="6.858" x2="-16.51" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-0.762" x2="-22.86" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="-0.762" x2="-22.86" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="0.508" x2="-19.05" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="0.508" x2="-19.05" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="1.778" x2="-22.86" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="1.778" x2="-22.86" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="3.048" x2="-19.05" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="3.048" x2="-19.05" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="4.318" x2="-22.86" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="4.318" x2="-22.86" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="5.588" x2="-19.05" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="5.588" x2="-19.05" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="6.858" x2="-22.86" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="6.858" x2="-22.86" y2="13.208" width="0.127" layer="21"/>
 <wire x1="17.145" y1="-6.35" x2="16.51" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="-4.445" x2="17.145" y2="-3.81" width="0.2032" layer="21"/>
 <wire x1="18.415" y1="-3.81" x2="19.05" y2="-4.445" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-5.715" x2="18.415" y2="-6.35" width="0.2032" layer="21"/>
 <wire x1="-19.05" y1="-4.445" x2="-19.05" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-4.445" x2="19.05" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-21.844" y1="19.05" x2="21.844" y2="19.05" width="0.127" layer="21"/>
+<wire x1="24.13" y1="16.764" x2="24.13" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="21.844" y1="-6.35" x2="-21.844" y2="-6.35" width="0.127" layer="21"/>
+<hole x="-21.971" y="16.891" drill="3.175"/>
+<hole x="-21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="16.891" drill="3.175"/>
+<wire x1="-24.13" y1="-4.064" x2="-24.13" y2="17.018" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="17.018" x2="-21.844" y2="19.05" width="0.127" layer="21" curve="-90"/>
+<wire x1="21.844" y1="19.05" x2="24.13" y2="16.764" width="0.127" layer="21" curve="-96.732921"/>
+<wire x1="24.13" y1="-4.318" x2="21.844" y2="-6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="-21.844" y1="-6.35" x2="-24.13" y2="-4.064" width="0.127" layer="21" curve="-96.732921"/>
 </package>
 </packages>
 <symbols>
@@ -2339,7 +2350,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun" deviceset="CAP" device="0603-CAP" value=".1uF"/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="4.7K"/>
@@ -2373,7 +2383,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="101.6" y="40.64"/>
-<instance part="GND2" gate="1" x="-43.18" y="53.34"/>
 <instance part="GND4" gate="1" x="157.48" y="91.44"/>
 <instance part="C1" gate="G$1" x="157.48" y="99.06"/>
 <instance part="R1" gate="G$1" x="172.72" y="99.06" rot="R90"/>
@@ -2415,10 +2424,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="157.48" y1="96.52" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="MO/MOSI/SDCMD"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>

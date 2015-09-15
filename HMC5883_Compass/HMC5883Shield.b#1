@@ -110,7 +110,7 @@
 <text x="10.414" y="5.461" size="1.778" layer="121">Nerduino
 
 HMC5883 Shield
-I2C 0x??
+I2C 0x1E
 www.nerduino.com</text>
 </plain>
 <libraries>

@@ -2365,6 +2365,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ12" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SJ13" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2398,6 +2399,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SJ12" gate="1" x="60.96" y="68.58" rot="R180"/>
 <instance part="SJ13" gate="1" x="60.96" y="66.04" rot="R180"/>
 <instance part="GND3" gate="1" x="83.82" y="106.68"/>
+<instance part="+3V3" gate="G$1" x="-55.88" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -2515,8 +2517,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$2" gate="G$1" pin="3V3$16"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="20.32" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="35.56" x2="30.48" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="3V3$25"/>
+<wire x1="20.32" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="58.42" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<junction x="27.94" y="35.56"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3V3$11"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="-43.18" y1="45.72" x2="-55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="45.72" x2="-55.88" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">

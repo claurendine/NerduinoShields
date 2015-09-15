@@ -379,28 +379,39 @@
 <wire x1="16.51" y1="-5.715" x2="15.875" y2="-6.35" width="0.2032" layer="21"/>
 <rectangle x1="17.526" y1="-5.334" x2="18.034" y2="-4.826" layer="51"/>
 <rectangle x1="17.526" y1="17.526" x2="18.034" y2="18.034" layer="51" rot="R180"/>
-<rectangle x1="16.51" y1="-3.81" x2="19.05" y2="16.51" layer="21"/>
-<wire x1="-11.43" y1="7.62" x2="-11.43" y2="0" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="0" x2="-17.78" y2="0" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-13.97" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="1.27" x2="-13.97" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="2.54" x2="-17.78" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="2.54" x2="-17.78" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="3.81" x2="-13.97" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="3.81" x2="-13.97" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="5.08" x2="-17.78" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="6.35" x2="-13.97" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="7.62" x2="-17.78" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="7.62" x2="-17.78" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="6.858" x2="-16.51" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-0.762" x2="-22.86" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="-0.762" x2="-22.86" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="0.508" x2="-19.05" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="0.508" x2="-19.05" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="1.778" x2="-22.86" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="1.778" x2="-22.86" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="3.048" x2="-19.05" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="3.048" x2="-19.05" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="4.318" x2="-22.86" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="4.318" x2="-22.86" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="5.588" x2="-19.05" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="5.588" x2="-19.05" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="6.858" x2="-22.86" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="6.858" x2="-22.86" y2="13.208" width="0.127" layer="21"/>
 <wire x1="17.145" y1="-6.35" x2="16.51" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="-4.445" x2="17.145" y2="-3.81" width="0.2032" layer="21"/>
 <wire x1="18.415" y1="-3.81" x2="19.05" y2="-4.445" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-5.715" x2="18.415" y2="-6.35" width="0.2032" layer="21"/>
 <wire x1="-19.05" y1="-4.445" x2="-19.05" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-4.445" x2="19.05" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-21.844" y1="19.05" x2="21.844" y2="19.05" width="0.127" layer="21"/>
+<wire x1="24.13" y1="16.764" x2="24.13" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="21.844" y1="-6.35" x2="-21.844" y2="-6.35" width="0.127" layer="21"/>
+<hole x="-21.971" y="16.891" drill="3.175"/>
+<hole x="-21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="16.891" drill="3.175"/>
+<wire x1="-24.13" y1="-4.064" x2="-24.13" y2="17.018" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="17.018" x2="-21.844" y2="19.05" width="0.127" layer="21" curve="-90"/>
+<wire x1="21.844" y1="19.05" x2="24.13" y2="16.764" width="0.127" layer="21" curve="-96.732921"/>
+<wire x1="24.13" y1="-4.318" x2="21.844" y2="-6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="-21.844" y1="-6.35" x2="-24.13" y2="-4.064" width="0.127" layer="21" curve="-96.732921"/>
 </package>
 </packages>
 <symbols>
@@ -2143,6 +2154,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <part name="BAT1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12MM"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NO"/>
+<part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2163,6 +2175,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <instance part="BAT1" gate="G$1" x="38.1" y="109.22"/>
 <instance part="GND4" gate="1" x="25.4" y="104.14"/>
 <instance part="SJ1" gate="1" x="2.54" y="86.36"/>
+<instance part="GND5" gate="1" x="76.2" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -2173,6 +2186,10 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="7.62" y1="33.02" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="33.02" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND$10"/>
+<wire x1="7.62" y1="43.18" x2="-5.08" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="43.18" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-5.08" y="33.02"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -2193,6 +2210,16 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="33.02" y1="109.22" x2="25.4" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="109.22" x2="25.4" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND$24"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="71.12" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="50.8" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND$17"/>
+<wire x1="76.2" y1="33.02" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<junction x="76.2" y="33.02"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
