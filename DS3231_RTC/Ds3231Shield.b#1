@@ -146,32 +146,7 @@
 <wire x1="2.16660625" y1="25.384365625" x2="0.0541875" y2="23.273153125" width="0" layer="20" curve="89.742583"/>
 <wire x1="0.0541875" y1="23.273153125" x2="-0.003615625" y2="2.321346875" width="0" layer="20"/>
 <wire x1="-0.003615625" y1="2.321346875" x2="2.3012" y2="0.02" width="0" layer="20" curve="89.909963"/>
-<text x="35.62" y="3.64" size="1.778" layer="16" rot="MR0">Nerduino
-
-RealTimeClock Shield
-I2C 0x?
-www.nerduino.com</text>
-<text x="34.49" y="3.8" size="1.778" layer="16" rot="MR0">Nerduino
-
-RealTimeClock Shield
-I2C 0x?
-www.nerduino.com</text>
-<text x="36.1" y="4" size="1.778" layer="16" rot="MR0">Nerduino
-
-RealTimeClock Shield
-I2C 0x?
-www.nerduino.com</text>
-<text x="43.09" y="6.51" size="1.778" layer="16" rot="MR0">Nerduino
-
-RealTimeClock Shield
-I2C 0x?
-www.nerduino.com</text>
-<text x="34" y="4.65" size="1.778" layer="16" rot="MR0">Nerduino
-
-RealTimeClock Shield
-I2C 0x?
-www.nerduino.com</text>
-<text x="34.63" y="4.75" size="1.778" layer="122" rot="MR0">Nerduino
+<text x="34.63" y="4.75" size="1.778" layer="122" rot="MR0">NERDUINO
 
 RealTimeClock Shield
 I2C 0x?

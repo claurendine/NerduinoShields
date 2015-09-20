@@ -146,7 +146,7 @@
 <wire x1="48.311" y1="23.205321875" x2="46.126321875" y2="25.39" width="0" layer="20" curve="90"/>
 <wire x1="46.126321875" y1="25.39" x2="2.152746875" y2="25.39" width="0" layer="20"/>
 <wire x1="2.152746875" y1="25.39" x2="0" y2="23.237253125" width="0" layer="20" curve="90"/>
-<text x="41.021" y="3.302" size="1.778" layer="121" rot="MR0">Nerduino
+<text x="32.385" y="3.683" size="1.778" layer="122" rot="MR0">NERDUINO
 
 BMP180 Shield
 I2C 0x77

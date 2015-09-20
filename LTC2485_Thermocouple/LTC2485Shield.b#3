@@ -107,10 +107,10 @@
 <wire x1="53.518" y1="0.762" x2="53.518" y2="27.295" width="0" layer="20"/>
 <wire x1="53.518" y1="27.295" x2="0.508" y2="27.168" width="0" layer="20"/>
 <wire x1="0.508" y1="27.168" x2="0.508" y2="0.635" width="0" layer="20"/>
-<text x="3.81" y="21.209" size="1.778" layer="1">Nerduino</text>
-<text x="33.147" y="20.828" size="1.778" layer="1">LTC2485 Shield</text>
-<text x="33.147" y="18.161" size="1.778" layer="1">I2C 0x??</text>
-<text x="30.734" y="5.08" size="1.778" layer="1">www.nerduino.com</text>
+<text x="3.81" y="21.209" size="1.778" layer="121">Nerduino</text>
+<text x="33.147" y="20.828" size="1.778" layer="121">LTC2485 Shield</text>
+<text x="33.147" y="18.161" size="1.778" layer="121">I2C 0x??</text>
+<text x="30.734" y="5.08" size="1.778" layer="121">www.nerduino.com</text>
 </plain>
 <libraries>
 <library name="SparkFun">

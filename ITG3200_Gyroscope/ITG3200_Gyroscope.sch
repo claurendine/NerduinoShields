@@ -1541,10 +1541,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="86.36" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="38.1" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND$24"/>
-<wire x1="86.36" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="55.88" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
-<junction x="88.9" y="38.1"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND$14"/>
@@ -1570,10 +1566,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="172.72" y="104.14"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="223.52" y1="104.14" x2="223.52" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="D7/GPIO13/RXD2/HSPID/SDA"/>
-<wire x1="172.72" y1="104.14" x2="223.52" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D11/GPIO09/SDD2"/>
+<wire x1="22.86" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="60.96" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="147.32" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1583,10 +1581,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="177.8" y="101.6"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="86.36" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="50.8" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="D6/GPIO12/HSPIQ/SCL"/>
-<wire x1="177.8" y1="101.6" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="101.6" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="144.78" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="144.78" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D12/GPIO10/SDD3"/>
+<wire x1="15.24" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">

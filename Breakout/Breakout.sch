@@ -1159,16 +1159,12 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <wire x1="22.86" y1="22.86" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="43.18" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND$24"/>
-<wire x1="88.9" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="50.8" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="33.02" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <junction x="22.86" y="22.86"/>
 <pinref part="U$1" gate="G$1" pin="GND$17"/>
 <wire x1="50.8" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<junction x="91.44" y="33.02"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="50.8" y1="17.78" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <junction x="50.8" y="22.86"/>

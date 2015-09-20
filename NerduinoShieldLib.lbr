@@ -1528,11 +1528,11 @@
 <pin name="D2/GPIO4" x="45.72" y="12.7" length="middle" rot="R180"/>
 <pin name="D3/GPIO0/FLASH" x="45.72" y="10.16" length="middle" rot="R180"/>
 <pin name="D4/GPIO2/TXD1" x="45.72" y="7.62" length="middle" rot="R180"/>
-<pin name="3V3$25" x="45.72" y="5.08" length="middle" rot="R180"/>
-<pin name="GND$24" x="45.72" y="2.54" length="middle" rot="R180"/>
+<pin name="3V3_" x="45.72" y="5.08" length="middle" rot="R180"/>
+<pin name="GND_" x="45.72" y="2.54" length="middle" rot="R180"/>
 <pin name="D5/GPIO14/HSPICLK" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="D6/GPIO12/HSPIQ/SCL" x="45.72" y="-2.54" length="middle" rot="R180"/>
-<pin name="D7/GPIO13/RXD2/HSPID/SDA" x="45.72" y="-5.08" length="middle" rot="R180"/>
+<pin name="D6/GPIO12/HSPIQ" x="45.72" y="-2.54" length="middle" rot="R180"/>
+<pin name="D7/GPIO13/RXD2/HSPID" x="45.72" y="-5.08" length="middle" rot="R180"/>
 <pin name="D8/GPIO15/TXD2/HSPICS" x="45.72" y="-7.62" length="middle" rot="R180"/>
 <pin name="D9/GPIO3/RXD0" x="45.72" y="-10.16" length="middle" rot="R180"/>
 <pin name="D10/GPIO1/TXD0" x="45.72" y="-12.7" length="middle" rot="R180"/>
@@ -1540,8 +1540,8 @@
 <pin name="A0/ADC0/TOUT" x="-17.78" y="17.78" length="middle"/>
 <pin name="RSV0" x="-17.78" y="15.24" length="middle"/>
 <pin name="RSV1" x="-17.78" y="12.7" length="middle"/>
-<pin name="D12/GPIO10/SDD3" x="-17.78" y="10.16" length="middle"/>
-<pin name="D11/GPIO09/SDD2" x="-17.78" y="7.62" length="middle"/>
+<pin name="D12/GPIO10/SDD3/SCL" x="-17.78" y="10.16" length="middle"/>
+<pin name="D11/GPIO09/SDD2/SDA" x="-17.78" y="7.62" length="middle"/>
 <pin name="INT/SDD1" x="-17.78" y="5.08" length="middle"/>
 <pin name="MO/MOSI/SDCMD" x="-17.78" y="2.54" length="middle"/>
 <pin name="MI/MISO/SDD0" x="-17.78" y="0" length="middle"/>
@@ -1850,26 +1850,26 @@ Standard 14-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connects>
 <connect gate="G$1" pin="3V3$11" pad="11"/>
 <connect gate="G$1" pin="3V3$16" pad="16"/>
-<connect gate="G$1" pin="3V3$25" pad="25"/>
+<connect gate="G$1" pin="3V3_" pad="25"/>
 <connect gate="G$1" pin="A0/ADC0/TOUT" pad="1"/>
 <connect gate="G$1" pin="D0/GPIO16/USER/WAKE" pad="30"/>
 <connect gate="G$1" pin="D1/GPIO5" pad="29"/>
 <connect gate="G$1" pin="D10/GPIO1/TXD0" pad="18"/>
-<connect gate="G$1" pin="D11/GPIO09/SDD2" pad="5"/>
-<connect gate="G$1" pin="D12/GPIO10/SDD3" pad="4"/>
+<connect gate="G$1" pin="D11/GPIO09/SDD2/SDA" pad="5"/>
+<connect gate="G$1" pin="D12/GPIO10/SDD3/SCL" pad="4"/>
 <connect gate="G$1" pin="D2/GPIO4" pad="28"/>
 <connect gate="G$1" pin="D3/GPIO0/FLASH" pad="27"/>
 <connect gate="G$1" pin="D4/GPIO2/TXD1" pad="26"/>
 <connect gate="G$1" pin="D5/GPIO14/HSPICLK" pad="23"/>
-<connect gate="G$1" pin="D6/GPIO12/HSPIQ/SCL" pad="22"/>
-<connect gate="G$1" pin="D7/GPIO13/RXD2/HSPID/SDA" pad="21"/>
+<connect gate="G$1" pin="D6/GPIO12/HSPIQ" pad="22"/>
+<connect gate="G$1" pin="D7/GPIO13/RXD2/HSPID" pad="21"/>
 <connect gate="G$1" pin="D8/GPIO15/TXD2/HSPICS" pad="20"/>
 <connect gate="G$1" pin="D9/GPIO3/RXD0" pad="19"/>
 <connect gate="G$1" pin="EN" pad="12"/>
 <connect gate="G$1" pin="GND$10" pad="10"/>
 <connect gate="G$1" pin="GND$14" pad="14"/>
 <connect gate="G$1" pin="GND$17" pad="17"/>
-<connect gate="G$1" pin="GND$24" pad="24"/>
+<connect gate="G$1" pin="GND_" pad="24"/>
 <connect gate="G$1" pin="INT/SDD1" pad="6"/>
 <connect gate="G$1" pin="MI/MISO/SDD0" pad="8"/>
 <connect gate="G$1" pin="MO/MOSI/SDCMD" pad="7"/>

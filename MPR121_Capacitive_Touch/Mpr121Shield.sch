@@ -2502,8 +2502,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instances>
 <instance part="GND4" gate="1" x="88.9" y="81.28"/>
 <instance part="C1" gate="G$1" x="88.9" y="88.9"/>
-<instance part="R1" gate="G$1" x="99.06" y="73.66" rot="R90"/>
-<instance part="R2" gate="G$1" x="109.22" y="73.66" rot="R90"/>
+<instance part="R1" gate="G$1" x="99.06" y="86.36" rot="R90"/>
+<instance part="R2" gate="G$1" x="109.22" y="86.36" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="88.9" y="104.14"/>
 <instance part="U$2" gate="G$1" x="27.94" y="53.34"/>
 <instance part="+3V1" gate="G$1" x="83.82" y="43.18"/>
@@ -2533,12 +2533,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="76.2" y1="27.94" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND$24"/>
-<wire x1="76.2" y1="38.1" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND$17"/>
 <wire x1="73.66" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<junction x="76.2" y="38.1"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND$14"/>
@@ -2576,9 +2572,9 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="88.9" y1="93.98" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="101.6" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="78.74" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="78.74" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
 <junction x="88.9" y="96.52"/>
 <junction x="99.06" y="96.52"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -2600,24 +2596,34 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="D6/GPIO12/HSPIQ/SCL"/>
-<wire x1="73.66" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SCL"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="68.58" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
-<junction x="99.06" y="50.8"/>
+<wire x1="99.06" y1="81.28" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="76.2" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="76.2" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="76.2" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<junction x="99.06" y="76.2"/>
+<wire x1="78.74" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="88.9" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D12/GPIO10/SDD3"/>
+<wire x1="2.54" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="D7/GPIO13/RXD2/HSPID/SDA"/>
 <pinref part="U$1" gate="G$1" pin="SDA"/>
-<wire x1="73.66" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="68.58" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
-<junction x="109.22" y="48.26"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="73.66" x2="76.2" y2="86.36" width="0.1524" layer="91"/>
+<junction x="109.22" y="73.66"/>
+<wire x1="76.2" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="86.36" x2="5.08" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D11/GPIO09/SDD2"/>
+<wire x1="5.08" y1="60.96" x2="10.16" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

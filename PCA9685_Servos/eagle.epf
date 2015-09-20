@@ -1,5 +1,5 @@
 [Eagle]
-Version="07 03 00"
+Version="07 04 00"
 Platform="Mac OS X"
 Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
@@ -331,14 +331,13 @@ UsedLibrary="/Applications/EAGLE/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zilog.lbr"
-UsedLibrary="/Users/chaselaurendine/Documents/eagle/Nerduino/NerduinoShieldLib.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="424 323 1592 1238"
+Loc="91 36 1259 951"
 State=2
 Number=0
 
 [Desktop]
-Screen="2560 1440"
+Screen="1920 1200"
 Window="Win_1"
