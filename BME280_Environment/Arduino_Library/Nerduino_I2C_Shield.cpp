@@ -19,19 +19,16 @@
 #include "Nerduino_I2C_Shield.h"
 #include <Wire.h>
 
-
-I2C_Shield::I2C_Shield(int8_t ioPin, int8_h address)
+I2C_Shield::I2C_Shield(int8_t ioPin, uint8_t address)
 {
     m_ioPin = ioPin;
     m_address = address;
-    m_detected = false;
+    begin();
 }
 
 bool I2C_Shield::begin()
 {
     Wire.begin();
-    
-    m_detected = isDetected();
 }
 
 int8_t I2C_Shield::read8(uint8_t reg)
@@ -45,7 +42,7 @@ uint8_t I2C_Shield::readU8(uint8_t reg)
     Wire.write(reg);
     Wire.endTransmission();
     
-    Wire.requestFrom(m_address, (byte) 1);
+    Wire.requestFrom(m_address, (int8_t) 1);
     uint8_t value = Wire.read();
     Wire.endTransmission();
     
@@ -63,12 +60,32 @@ uint16_t I2C_Shield::readU16(uint8_t reg)
     Wire.write(reg);
     Wire.endTransmission();
     
-    Wire.requestFrom(m_address, (byte) 2);
+    Wire.requestFrom(m_address, (int8_t) 2);
     uint16_t value = (Wire.read() << 8) | Wire.read();
     Wire.endTransmission();
     
     return value;
 }
+
+
+int16_t I2C_Shield::read16LE(uint8_t reg)
+{
+    return (int16_t) readU16LE(reg);
+}
+
+uint16_t I2C_Shield::readU16LE(uint8_t reg)
+{
+    Wire.beginTransmission(m_address);
+    Wire.write(reg);
+    Wire.endTransmission();
+    
+    Wire.requestFrom(m_address, (int8_t) 2);
+    uint16_t value = Wire.read() | (Wire.read() << 8);
+    Wire.endTransmission();
+    
+    return value;
+}
+
 
 void I2C_Shield::write(uint8_t reg, int8_t value)
 {
@@ -92,7 +109,7 @@ void I2C_Shield::write(uint8_t reg, uint16_t value)
 {
     Wire.beginTransmission(m_address);
     Wire.write(reg);
-    Wire.write((value >> 8) 0xFF);
+    Wire.write((value >> 8) & 0xFF);
     Wire.endTransmission();
     
     Wire.beginTransmission(m_address);

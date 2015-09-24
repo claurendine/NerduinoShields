@@ -61,19 +61,43 @@
 
 
 
-public class BME280 : I2C_Shield
+class BME280
 {
 public:
     BME280(); // using shield default io pin for sda
     BME280(uint8_t ioPin);
     
-    float getTemperature();
-    float getPressure();
-    float getHumidity();
+    float readTemperature();
+    float readPressure();
+    float readHumidity();
+    
+    void configure(uint8_t tempOversampling, uint8_t pressureOversampling, uint8_t humidityOversampling, uint8_t mode);
+    // Oversampling settings
+    // 0 - off
+    // 1 - 1x
+    // 2 - 2x
+    // 3 - 4x
+    // 4 - 8x
+    // 5 - 16x
+
+    // Mode settings
+    // 0 - Sleep
+    // 1 - Forced
+    // 2 - Forced
+    // 3 - Normal
+    
+
+    bool isDetected();
     
 private:
-    virtual bool isDetected() override;
     void initialize();
+    void applySampling();
+    
+    int8_t humidityOversampling;
+    int8_t temperatureOversampling;
+    int8_t pressureOversampling;
+    
+    I2C_Shield i2c;
     
     uint16_t dig_T1;
     int16_t dig_T2;
@@ -95,5 +119,7 @@ private:
     int16_t dig_H4;
     int16_t dig_H5;
     int8_t dig_H6;
+    
+    int32_t t_fine;
 };
 
