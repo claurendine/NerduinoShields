@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -344,28 +344,39 @@
 <wire x1="16.51" y1="-5.715" x2="15.875" y2="-6.35" width="0.2032" layer="21"/>
 <rectangle x1="17.526" y1="-5.334" x2="18.034" y2="-4.826" layer="51"/>
 <rectangle x1="17.526" y1="17.526" x2="18.034" y2="18.034" layer="51" rot="R180"/>
-<rectangle x1="16.51" y1="-3.81" x2="19.05" y2="16.51" layer="21"/>
-<wire x1="-11.43" y1="7.62" x2="-11.43" y2="0" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="0" x2="-17.78" y2="0" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-13.97" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="1.27" x2="-13.97" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="2.54" x2="-17.78" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="2.54" x2="-17.78" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="3.81" x2="-13.97" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="3.81" x2="-13.97" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="5.08" x2="-17.78" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="6.35" x2="-13.97" y2="6.35" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-13.97" y1="7.62" x2="-17.78" y2="7.62" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="7.62" x2="-17.78" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="6.858" x2="-16.51" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-0.762" x2="-22.86" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="-0.762" x2="-22.86" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="0.508" x2="-19.05" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="0.508" x2="-19.05" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="1.778" x2="-22.86" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="1.778" x2="-22.86" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="3.048" x2="-19.05" y2="3.048" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="3.048" x2="-19.05" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="4.318" x2="-22.86" y2="4.318" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="4.318" x2="-22.86" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="5.588" x2="-19.05" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="5.588" x2="-19.05" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="6.858" x2="-22.86" y2="6.858" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="6.858" x2="-22.86" y2="13.208" width="0.127" layer="21"/>
 <wire x1="17.145" y1="-6.35" x2="16.51" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="-4.445" x2="17.145" y2="-3.81" width="0.2032" layer="21"/>
 <wire x1="18.415" y1="-3.81" x2="19.05" y2="-4.445" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-5.715" x2="18.415" y2="-6.35" width="0.2032" layer="21"/>
 <wire x1="-19.05" y1="-4.445" x2="-19.05" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="19.05" y1="-4.445" x2="19.05" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-21.844" y1="19.05" x2="21.844" y2="19.05" width="0.127" layer="21"/>
+<wire x1="24.13" y1="16.764" x2="24.13" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="21.844" y1="-6.35" x2="-21.844" y2="-6.35" width="0.127" layer="21"/>
+<hole x="-21.971" y="16.891" drill="3.175"/>
+<hole x="-21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="-4.191" drill="3.175"/>
+<hole x="21.971" y="16.891" drill="3.175"/>
+<wire x1="-24.13" y1="-4.064" x2="-24.13" y2="17.018" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="17.018" x2="-21.844" y2="19.05" width="0.127" layer="21" curve="-90"/>
+<wire x1="21.844" y1="19.05" x2="24.13" y2="16.764" width="0.127" layer="21" curve="-96.732921"/>
+<wire x1="24.13" y1="-4.318" x2="21.844" y2="-6.35" width="0.127" layer="21" curve="-90"/>
+<wire x1="-21.844" y1="-6.35" x2="-24.13" y2="-4.064" width="0.127" layer="21" curve="-96.732921"/>
 </package>
 </packages>
 <symbols>
@@ -382,8 +393,8 @@
 <pin name="3V3$25" x="45.72" y="5.08" length="middle" rot="R180"/>
 <pin name="GND$24" x="45.72" y="2.54" length="middle" rot="R180"/>
 <pin name="D5/GPIO14/HSPICLK" x="45.72" y="0" length="middle" rot="R180"/>
-<pin name="D6/GPIO12/HSPIQ" x="45.72" y="-2.54" length="middle" rot="R180"/>
-<pin name="D7/GPIO13/RXD2/HSPID" x="45.72" y="-5.08" length="middle" rot="R180"/>
+<pin name="D6/GPIO12/HSPIQ/SCL" x="45.72" y="-2.54" length="middle" rot="R180"/>
+<pin name="D7/GPIO13/RXD2/HSPID/SDA" x="45.72" y="-5.08" length="middle" rot="R180"/>
 <pin name="D8/GPIO15/TXD2/HSPICS" x="45.72" y="-7.62" length="middle" rot="R180"/>
 <pin name="D9/GPIO3/RXD0" x="45.72" y="-10.16" length="middle" rot="R180"/>
 <pin name="D10/GPIO1/TXD0" x="45.72" y="-12.7" length="middle" rot="R180"/>
@@ -427,8 +438,8 @@
 <connect gate="G$1" pin="D3/GPIO0/FLASH" pad="27"/>
 <connect gate="G$1" pin="D4/GPIO2/TXD1" pad="26"/>
 <connect gate="G$1" pin="D5/GPIO14/HSPICLK" pad="23"/>
-<connect gate="G$1" pin="D6/GPIO12/HSPIQ" pad="22"/>
-<connect gate="G$1" pin="D7/GPIO13/RXD2/HSPID" pad="21"/>
+<connect gate="G$1" pin="D6/GPIO12/HSPIQ/SCL" pad="22"/>
+<connect gate="G$1" pin="D7/GPIO13/RXD2/HSPID/SDA" pad="21"/>
 <connect gate="G$1" pin="D8/GPIO15/TXD2/HSPICS" pad="20"/>
 <connect gate="G$1" pin="D9/GPIO3/RXD0" pad="19"/>
 <connect gate="G$1" pin="EN" pad="12"/>
@@ -772,6 +783,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="POWER_JACK" prefix="J">
@@ -853,6 +869,19 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 </device>
 </devices>
 </deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -871,6 +900,7 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <part name="X3" library="con-wago-500" deviceset="W237-6" device=""/>
 <part name="X4" library="con-wago-500" deviceset="W237-6" device=""/>
 <part name="J1" library="SparkFun" deviceset="POWER_JACK" device="SMD"/>
+<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -903,6 +933,7 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <instance part="X4" gate="-5" x="-7.62" y="58.42"/>
 <instance part="X4" gate="-6" x="-7.62" y="53.34"/>
 <instance part="J1" gate="G$1" x="17.78" y="5.08"/>
+<instance part="GND1" gate="1" x="50.8" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -946,7 +977,7 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <net name="N$6" class="0">
 <segment>
 <pinref part="X2" gate="-1" pin="KL"/>
-<pinref part="U$1" gate="G$1" pin="D6/GPIO12/HSPIQ"/>
+<pinref part="U$1" gate="G$1" pin="D6/GPIO12/HSPIQ/SCL"/>
 <wire x1="116.84" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1000,7 +1031,7 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <pinref part="X2" gate="-2" pin="KL"/>
 <wire x1="116.84" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="40.64" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D7/GPIO13/RXD2/HSPID"/>
+<pinref part="U$1" gate="G$1" pin="D7/GPIO13/RXD2/HSPID/SDA"/>
 <wire x1="104.14" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1096,7 +1127,23 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <junction x="25.4" y="30.48"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="3V3$11"/>
+<wire x1="25.4" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-4" pin="KL"/>
+<wire x1="15.24" y1="30.48" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="X3" gate="-3" pin="KL"/>
+<pinref part="U$1" gate="G$1" pin="RST"/>
+<wire x1="-2.54" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND$14"/>
 <wire x1="25.4" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
@@ -1106,17 +1153,21 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 <wire x1="17.78" y1="25.4" x2="-2.54" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="PWR"/>
 <wire x1="20.32" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="12.7" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="12.7" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <junction x="22.86" y="33.02"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3V3$11"/>
-<wire x1="25.4" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="40.64" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-4" pin="KL"/>
-<wire x1="15.24" y1="30.48" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND$10"/>
+<wire x1="22.86" y1="22.86" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="33.02" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+<junction x="22.86" y="22.86"/>
+<pinref part="U$1" gate="G$1" pin="GND$17"/>
+<wire x1="50.8" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="50.8" y1="17.78" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+<junction x="50.8" y="22.86"/>
 </segment>
 </net>
 </nets>
