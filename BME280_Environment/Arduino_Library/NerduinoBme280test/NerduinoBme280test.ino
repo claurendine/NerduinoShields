@@ -9,7 +9,8 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Nerduino BME280 test");
 
-  bme = new BME280();
+  bme = new BME280(10, 9);
+  //bme = new BME280(9, 10);
 
   if (!bme->isDetected()) 
   {  
@@ -36,5 +37,5 @@ void loop() {
     Serial.println(" %");
     
     Serial.println();
-    delay(4000);
+    delay(500);
 }

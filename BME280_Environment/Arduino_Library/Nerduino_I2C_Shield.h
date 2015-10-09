@@ -22,10 +22,9 @@
 class I2C_Shield
 {
 public:
-    I2C_Shield(int8_t ioPin, uint8_t address);
+    I2C_Shield(uint8_t address);
+    I2C_Shield(uint8_t scl, uint8_t sda, uint8_t address);
 
-    bool begin();
-    
     int8_t read8(uint8_t reg);
     uint8_t readU8(uint8_t reg);
     int16_t read16(uint8_t reg);
@@ -34,10 +33,10 @@ public:
     uint16_t readU16LE(uint8_t reg);
 
     
-    void write(uint8_t reg, int8_t value);
-    void write(uint8_t reg, uint8_t value);
-    void write(uint8_t reg, int16_t value);
-    void write(uint8_t reg, uint16_t value);
+    void write8(uint8_t reg, int8_t value);
+    void writeU8(uint8_t reg, uint8_t value);
+    void write16(uint8_t reg, int16_t value);
+    void writeU16(uint8_t reg, uint16_t value);
     
 protected:
     

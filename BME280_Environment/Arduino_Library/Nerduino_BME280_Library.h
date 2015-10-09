@@ -65,7 +65,7 @@ class BME280
 {
 public:
     BME280(); // using shield default io pin for sda
-    BME280(uint8_t ioPin);
+    BME280(uint8_t scl, uint8_t sda);
     
     float readTemperature();
     float readPressure();

@@ -19,15 +19,15 @@
 #include "Nerduino_I2C_Shield.h"
 #include <Wire.h>
 
-I2C_Shield::I2C_Shield(int8_t ioPin, uint8_t address)
+I2C_Shield::I2C_Shield(uint8_t scl, uint8_t sda, uint8_t address)
 {
-    m_ioPin = ioPin;
     m_address = address;
-    begin();
+    Wire.begin(sda, scl);
 }
 
-bool I2C_Shield::begin()
+I2C_Shield::I2C_Shield(uint8_t address)
 {
+    m_address = address;
     Wire.begin();
 }
 
@@ -87,12 +87,12 @@ uint16_t I2C_Shield::readU16LE(uint8_t reg)
 }
 
 
-void I2C_Shield::write(uint8_t reg, int8_t value)
+void I2C_Shield::write8(uint8_t reg, int8_t value)
 {
-    write(reg, (uint8_t) value);
+    writeU8(reg, (uint8_t) value);
 }
 
-void I2C_Shield::write(uint8_t reg, uint8_t value)
+void I2C_Shield::writeU8(uint8_t reg, uint8_t value)
 {
     Wire.beginTransmission(m_address);
     Wire.write(reg);
@@ -100,12 +100,12 @@ void I2C_Shield::write(uint8_t reg, uint8_t value)
     Wire.endTransmission();
 }
 
-void I2C_Shield::write(uint8_t reg, int16_t value)
+void I2C_Shield::write16(uint8_t reg, int16_t value)
 {
-    write(reg, (uint16_t) value);
+    writeU16(reg, (uint16_t) value);
 }
 
-void I2C_Shield::write(uint8_t reg, uint16_t value)
+void I2C_Shield::writeU16(uint8_t reg, uint16_t value)
 {
     Wire.beginTransmission(m_address);
     Wire.write(reg);

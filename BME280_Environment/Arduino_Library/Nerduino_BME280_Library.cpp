@@ -1,12 +1,18 @@
 #include "Nerduino_BME280_Library.h"
 
 
-BME280::BME280() : BME280(SHIELD_SDA)
+BME280::BME280() : i2c(0x77)
 {
+    // verify that the device is present
+    if (isDetected())
+    {
+        // initialize the device
+        initialize();
+    }
 }
 
-BME280::BME280(uint8_t ioPin) :
-    i2c(ioPin, 0x77)
+BME280::BME280(uint8_t scl, uint8_t sda) :
+    i2c(scl, sda, 0x77)
 {
     // verify that the device is present
     if (isDetected())
@@ -46,10 +52,10 @@ void BME280::initialize()
     
     
     // enable control
-    i2c.write(BME280_CONTROL, 0x3F);
+    i2c.writeU8(BME280_CONTROL, 0x3F);
     
     // enable humidity
-    i2c.write(BME280_CONTROL_HUMIDITY, 0x03);
+    i2c.writeU8(BME280_CONTROL_HUMIDITY, 0x03);
 }
 
 float BME280::readTemperature()
@@ -142,14 +148,14 @@ void BME280::configure(uint8_t temp, uint8_t pressure, uint8_t humidity, uint8_t
         mode = 3;
     
     
-    i2c.write(BME280_CONTROL_HUMIDITY, humidity);
+    i2c.writeU8(BME280_CONTROL_HUMIDITY, humidity);
     
     uint8_t control = mode | (pressure << 2) | (temp << 5);
     
     Serial.print("Control = ");
     Serial.println(control);
     
-    i2c.write(BME280_CONTROL, control);
+    i2c.writeU8(BME280_CONTROL, control);
 }
 
 /*
